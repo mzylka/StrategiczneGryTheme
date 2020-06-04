@@ -66,7 +66,7 @@
     } );
 
     function custom_excerpt_length() {
-        return 24;
+        return 15;
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length');
 ?>
