@@ -1,0 +1,35 @@
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+
+    @include respond(tab-land){
+        margin: 0 2rem;
+    }
+}
+
+.row{
+    display: flex;
+
+    margin-bottom: 2rem;
+
+    .left-column{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+
+        @include respond(tab-land){
+            width: 100%;
+        }
+    }
+
+    .right-column{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        margin-left: 2rem;
+
+        @include respond(tab-land){
+            display: none;
+        }
+    }
+}

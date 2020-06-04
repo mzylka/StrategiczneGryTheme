@@ -1,0 +1,24 @@
+.hamburger-menu{
+    width: 30px;
+    height: 25px;
+    display: none;
+    cursor: pointer;
+    
+    @include respond(tab-port){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+
+    &:before,
+    &:after,
+    &__icon{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $font-color;
+    }
+    
+}

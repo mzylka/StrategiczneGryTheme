@@ -1,0 +1,20 @@
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+@import "./styles/base/base";
+@import "./styles/base/typography";
+@import "./styles/base/utilities";
+@import "./styles/base/animations";
+
+@import "./styles/layout/header";
+@import "./styles/layout/grid";
+@import "./styles/layout/footer";
+@import "./styles/layout/main-section";
+@import "./styles/layout/categories";
+@import "./styles/layout/post-content";
+
+@import "./styles/components/searchform";
+@import "./styles/components/post-block";
+@import "./styles/components/cat-post";
+@import "./styles/components/pagination";
+@import "./styles/components/hamburger-menu";

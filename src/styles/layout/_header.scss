@@ -1,0 +1,124 @@
+.header{
+    background-color: $primary-color;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
+
+    z-index: 999;
+
+    &__img{
+        display: block;
+    }
+
+    &__content{
+        display: flex;
+        align-items: center;
+        min-height: 6.5rem;
+
+        @include respond(tab-port){
+            flex-direction: column;
+            align-items: unset;
+            align-content: center;
+        }
+    }
+
+    &__top{
+        display: flex;
+        align-items: center;
+
+        @include respond(tab-port){
+            width: 100%;
+            height: 6.5rem;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        @include respond(tab-port){
+            display: none;
+        }
+
+        &--is-visible{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            margin-left: unset;
+            animation: menuAnim .4s;
+        }
+
+    }
+
+    &__navigation{
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
+
+    &__navigation-menu{
+        display: flex;
+        flex-grow: 1;
+        text-decoration: none;
+        color: $font-color;
+        list-style: none;
+
+        font-size: 2rem;
+
+        @include respond(tab-port){
+            flex-direction: column;
+        }
+
+        .menu-item{
+            display: block;
+            margin: 0 1rem;
+            padding-top: 0.3rem;
+            border-bottom: 2px solid transparent;
+
+            @include respond(tab-port){
+                text-align: center;
+            }
+
+            &::after{
+                content: '';
+                display: block;
+                margin: auto;
+                height: 3px;
+                width: 0;
+                background-color: transparent;
+                transition: width .3s ease, background-color .3s ease;
+                border-radius: 1px;
+
+                @include respond(tab-port){
+                    height: 1px;
+                    width: 100%;
+                    background-color: $primary-color-light;
+                }
+            }
+
+            &:hover{
+                &:after{
+                    width: 100%;
+                    background-color: $secondary-color;
+                }
+            }
+
+            a{
+                font-weight: 400;
+                &:hover{
+                    transition: color .5s ease;
+                    color: $font-color-secondary;
+                }
+
+                @include respond(tab-port){
+                    display: block;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}

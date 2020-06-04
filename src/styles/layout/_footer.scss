@@ -1,0 +1,28 @@
+.footer{
+    background-color: $primary-color;
+
+    &__links{
+        text-align: center;
+    }
+
+    &__menus{
+        border-top: 1px solid $primary-color-light;
+    }
+
+    &__fb{
+        width: 6.4rem;
+        height: 6.4rem;
+        fill: $primary-color-light;
+        transition: fill ease .5s;
+
+        &:hover{
+            fill: #3578E5;
+        }
+    }
+
+    &__copyright{
+        text-align: center;
+        font-size: 1.3rem;
+
+    }
+}

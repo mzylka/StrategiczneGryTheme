@@ -1,0 +1,14 @@
+.pagination{
+    font-size: 2.5rem;
+
+    .page-numbers{
+        display: inline-block;
+        background-color: $primary-color;
+        padding: 0 2rem;
+        border-radius: 2px;
+    }
+
+    .current{
+        background-color: $primary-color-light;
+    }
+}

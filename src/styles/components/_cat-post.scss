@@ -1,0 +1,60 @@
+.cat-post{
+    width: 100%;
+    height: 12rem;
+
+    position: relative;
+
+    &:hover{
+        .cat-post__title-link{
+            color: $secondary-color;
+            transition: color .2s ease-in;
+        }
+    }
+
+    &:not(:last-of-type){
+        border-bottom: 1px solid $primary-color;
+    }
+
+    &__link{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+
+        z-index: 20;
+
+        &:hover{
+            box-shadow:inset 0px 0px 0px 2px $secondary-color;
+            transition: box-shadow .2s ease-in;
+        }
+    }
+
+    &__box{
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+    }
+
+    &__title-box{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+
+        margin: 0 1rem;
+    }
+
+    &__title{  
+        font-size: 1.6rem;
+    }
+
+}
