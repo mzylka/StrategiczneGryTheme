@@ -64,4 +64,9 @@
     add_action( 'after_setup_theme', function() {
         add_theme_support( 'responsive-embeds' );
     } );
+
+    function custom_excerpt_length() {
+        return 24;
+    }
+    add_filter( 'excerpt_length', 'custom_excerpt_length');
 ?>
