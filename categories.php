@@ -1,10 +1,17 @@
 <aside class="categories">
     <?php
-        $catnum = count(get_categories(array('get' => 'all', 'hide_empty' => 0)));
-        for($i=2; $i<=$catnum; $i++){
-            echo "<section><div class='categories__block'><h2 class='categories__title'>". get_cat_name($i) . "</h2>";
+        $categories = get_categories();
+        $categoriesArray = [];
+
+        foreach($categories as $category){
+            array_push($categoriesArray, $category->cat_ID);
+        }
+        
+        foreach($categoriesArray as $catId){
+            echo "<section><div class='categories__block'><h2 class='categories__title'>". get_cat_name($catId) . "</h2>";
+
             $args = array(
-                'cat' => $i,
+                'cat' => $catId,
                 'posts_per_page' => 3
             );
 
@@ -15,6 +22,8 @@
                     get_template_part('cat-post');
                 endwhile;
             endif;
+
+            wp_reset_query();
 
             echo "</div></section>";
         }
