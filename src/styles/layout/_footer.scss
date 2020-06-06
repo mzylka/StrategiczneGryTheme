@@ -3,9 +3,10 @@
 
     &__links{
         text-align: center;
+        margin-bottom: 2rem;
     }
 
-    &__menus{
+    &__menu{
         border-top: 1px solid $primary-color-light;
     }
 
@@ -17,6 +18,22 @@
 
         &:hover{
             fill: #3578E5;
+        }
+    }
+
+    &__navigation{
+        margin: 2rem auto;
+    }
+
+    &__navigation-menu{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-size: 1.5rem;
+
+        .menu-item{
+            display: block;
+            margin: 0 1rem;
         }
     }
 
