@@ -2,6 +2,10 @@
     border: 2px solid $primary-color;
     border-radius: 3px;
 
+    a{
+        font-weight: bold;
+    }
+
     &__image-box{
         img{
             display: block;
