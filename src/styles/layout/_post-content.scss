@@ -2,6 +2,10 @@
     border: 2px solid $primary-color;
     border-radius: 3px;
 
+    @include respond(phone){
+        border: none;
+    }
+
     a{
         font-weight: bold;
     }
@@ -17,6 +21,10 @@
     &__text{
         margin: 1rem 2rem;
 
+        @include respond(phone){
+            margin: 1rem 0;
+        }
+
     }
 
     &__title{
@@ -30,6 +38,10 @@
     &__main{
         font-size: 1.7rem;
         margin: 2rem 2rem;
+
+        @include respond(phone){
+            margin: 2rem 0;
+        }
 
         .wp-block-embed{
             margin: 1rem 0;
