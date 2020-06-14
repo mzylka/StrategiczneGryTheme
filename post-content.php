@@ -15,4 +15,7 @@
     <div class="post-content__main">
         <?php the_content(); ?>
     </div>
+    <div class="post-content__tags">
+        <?php echo get_the_tag_list('<span class="post-content__tag">','</span><span class="post-content__tag">','</span>') ?>
+    </div>
 </article>

@@ -59,4 +59,19 @@
             list-style-position: inside;
         }
     }
+
+    &__tags{
+        font-size: 1.3rem;
+        margin: 1rem 2rem;
+    }
+
+    &__tag{
+        display: inline-block;
+        background-color: $primary-color;
+        padding: 0.3rem 0.5rem;
+        margin-left: 0.5rem;
+        &:first-of-type{
+            margin-left: 0;
+        }
+    }
 }
