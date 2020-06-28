@@ -8,7 +8,7 @@
                 <h1><?php the_title(); ?></h1>
             </div>
             <div class="post-content__date-box">
-                <p class="post-block__date"><?php the_time('j F, Y') ?> | Kategoria: <?php echo getCategory() ?></p>
+                <p class="post-content__date"><?php the_time('j F, Y') ?> | Kategoria: <?php echo getCategory() ?></p>
             </div>
         </div>
     </header>

@@ -6,10 +6,6 @@
         border: none;
     }
 
-    a{
-        font-weight: bold;
-    }
-
     &__image-box{
         img{
             display: block;
@@ -33,11 +29,21 @@
 
     &__date{
         color: $font-color-secondary;
+        font-size: 1.2rem;
+        font-weight: 100;
+
+        a{
+            font-weight: bold;
+        }
     }
 
     &__main{
         font-size: 1.7rem;
         margin: 2rem 2rem;
+        
+        a{
+            text-decoration: underline;
+        }
 
         @include respond(phone){
             margin: 2rem 0;
