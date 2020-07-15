@@ -56,6 +56,7 @@
         add_image_size('cat-thumbnail', 192, 108, false);
         add_image_size('smallest-thumbnail', 256, 144, false);
         add_image_size('small-thumbnail', 426, 240, false);
+        add_image_size('medium', 640, 360, false);
         add_image_size('large-thumbnail', 1024, 576, false);
         add_image_size('hd-thumbnail', 1280, 720, false);
         add_image_size('banner-image', 920, 210, true);
